@@ -1,0 +1,151 @@
+/* Flexbox Part 1 */
+
+#flex-section1 ul {
+    padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+#flex-section2 li {
+	list-style: none;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+#flex-section2 .item1 {
+	order: 1;
+}
+
+#flex-section2 .item2 {
+	order: 3;
+}
+
+#flex-section2 .item3 {
+	order: 2;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#flex-section3 .tags ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 100px;
+	justify-items: stretch;
+	justify-content: space-evenly;
+	gap: 20px;
+}
+
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+	display: grid;
+	grid-column: 2 / span 3;
+	grid-row: 1 / span 3;
+	order: 2;
+}
+
+#grid-section2 .gridboxred {
+	display: grid;
+	grid-column: 1 / span 2;
+	grid-row: 2;
+	order: 1;
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px 300px 100px;
+	gap: 10px;
+}
+
+#grid-section3 .box1 {
+	grid-column: 1 / span 2;
+	grid-row: 1;
+}
+
+#grid-section3 .box2 {
+	order: 2;
+}
+
+#grid-section3 .box3 {
+	order: 1;
+}
+
+#grid-section3 .box4 {
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #cccccc;
+	color: #000;
+	padding: 20px;
+	text-decoration: none;
+	transition: background-color, color;
+	transition-duration: 3s;
+
+}
+
+#transition-section .box a:hover {
+	background-color: #5c00cc;
+	color: #fff;
+	transition-duration: .5s;
+}
+
+/* end Transition Part */
